@@ -41,6 +41,7 @@ public class AdminController {
 						HttpServletRequest request) {
 		PageInfo<User> userPage = userService.getPageList(name,page);
 		request.setAttribute("info", userPage);
+		request.setAttribute("name", name);
 		return "admin/user/list";
 		
 	}
