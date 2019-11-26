@@ -82,7 +82,6 @@
 			expression="execution(* com.wangchaoyue.service.impl.*.*(..))" id="pointcut" />
 		<!-- 关联事务 -->
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" />
-
 	</aop:config>
 
 	<!--8 扫描mapper -->
